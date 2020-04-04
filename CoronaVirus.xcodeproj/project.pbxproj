@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		84457C442438E24A0071AD9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84457C432438E24A0071AD9B /* Assets.xcassets */; };
 		84457C472438E24A0071AD9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84457C452438E24A0071AD9B /* LaunchScreen.storyboard */; };
 		84457C522438E24B0071AD9B /* CoronaVirusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C512438E24B0071AD9B /* CoronaVirusTests.swift */; };
+		84457C5E2438F6580071AD9B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C5D2438F6580071AD9B /* HomeController.swift */; };
 		E3FD203EBCF6F1D335829CE6 /* Pods_CoronaVirusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED15385189D9C80F828E028 /* Pods_CoronaVirusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		84457C4D2438E24B0071AD9B /* CoronaVirusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoronaVirusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84457C512438E24B0071AD9B /* CoronaVirusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaVirusTests.swift; sourceTree = "<group>"; };
 		84457C532438E24B0071AD9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84457C5D2438F6580071AD9B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DAAA8F5CAFFCBF2DFB183E21 /* Pods-CoronaVirusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirusTests.debug.xcconfig"; path = "Target Support Files/Pods-CoronaVirusTests/Pods-CoronaVirusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6C4B5986328C3E3401A57AC /* Pods-CoronaVirus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirus.release.xcconfig"; path = "Target Support Files/Pods-CoronaVirus/Pods-CoronaVirus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 		84457C392438E2480071AD9B /* CoronaVirus */ = {
 			isa = PBXGroup;
 			children = (
+				84457C5C2438F63A0071AD9B /* Controllers */,
 				84457C3A2438E2480071AD9B /* AppDelegate.swift */,
 				84457C3C2438E2480071AD9B /* SceneDelegate.swift */,
 				84457C3E2438E2480071AD9B /* ViewController.swift */,
@@ -120,6 +123,14 @@
 			path = CoronaVirusTests;
 			sourceTree = "<group>";
 		};
+		84457C5C2438F63A0071AD9B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84457C5D2438F6580071AD9B /* HomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		BC272AC2624A7621AA28F157 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +139,6 @@
 				DAAA8F5CAFFCBF2DFB183E21 /* Pods-CoronaVirusTests.debug.xcconfig */,
 				02289CA986ED0A82C046E041 /* Pods-CoronaVirusTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -300,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84457C5E2438F6580071AD9B /* HomeController.swift in Sources */,
 				84457C3F2438E2480071AD9B /* ViewController.swift in Sources */,
 				84457C3B2438E2480071AD9B /* AppDelegate.swift in Sources */,
 				84457C3D2438E2480071AD9B /* SceneDelegate.swift in Sources */,

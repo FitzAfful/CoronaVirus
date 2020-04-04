@@ -55,7 +55,7 @@
         <!--Home-->
         <scene sceneID="hF1-XP-2VF">
             <objects>
-                <viewController storyboardIdentifier="HomeController" id="TsX-SB-va2" customClass="HomeController" customModule="Baptist_Hymnal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeController" id="TsX-SB-va2" customClass="HomeController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ina-EH-aMe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
         <!--Symptoms-->
         <scene sceneID="Ycp-kL-nXY">
             <objects>
-                <viewController storyboardIdentifier="FavoriteController" id="pGx-0P-tvf" customClass="FavoriteController" customModule="Baptist_Hymnal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SymptomsController" id="pGx-0P-tvf" customClass="SymptomsController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AbL-Ha-bkJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,7 +189,7 @@
         <!--Advice-->
         <scene sceneID="k2C-W3-ATp">
             <objects>
-                <viewController id="4bh-V3-6i3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdviceController" id="4bh-V3-6i3" customClass="AdviceController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nu9-Zm-kQm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +224,7 @@
         <!--News-->
         <scene sceneID="FHa-xe-PSw">
             <objects>
-                <viewController id="HhG-c6-gwT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsController" id="HhG-c6-gwT" customClass="NewsController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9i-e7-Q7m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -278,7 +278,7 @@
         <!--Contact-->
         <scene sceneID="MSG-Ry-ugo">
             <objects>
-                <viewController id="Xrf-Vn-3jB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactController" id="Xrf-Vn-3jB" customClass="ContactController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="87V-5h-GIH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,7 +319,7 @@
         <image name="icons8-phone_not_being_used" width="25" height="25"/>
         <image name="icons8-symptom" width="25" height="25"/>
         <namedColor name="colorPrimary">
-            <color red="0.050980392156862744" green="0.29803921568627451" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.050999999046325684" green="0.29800000786781311" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
