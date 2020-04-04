@@ -1,5 +1,5 @@
 //
-//  HomeController.swift
+//  ContactController.swift
 //  CoronaVirus
 //
 //  Created by Fitzgerald Afful on 04/04/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeController: UIViewController {
+class ContactController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NewsController.swift
 //  CoronaVirus
 //
 //  Created by Fitzgerald Afful on 04/04/2020.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NewsController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
-

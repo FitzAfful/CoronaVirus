@@ -1,5 +1,5 @@
 //
-//  HomeController.swift
+//  AdviceController.swift
 //  CoronaVirus
 //
 //  Created by Fitzgerald Afful on 04/04/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeController: UIViewController {
+class AdviceController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,5 @@ class HomeController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
 }
