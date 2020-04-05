@@ -18,11 +18,12 @@ class EmergencyCell: UITableViewCell {
     var item: EmergencyContact? {
         didSet {
             guard let emergencyContact = item else { return }
-            self.titleLabel.text = emergencyContact.title
+            self.titleLabel.text = "  " + emergencyContact.title
             self.descriptionLabel.text = emergencyContact.details
             self.descriptionLabel.addInterlineSpacing(spacingValue: 3)
             self.callButton.setTitle("Call \(emergencyContact.contactNumber)", for: UIControl.State())
             self.bgColorView.backgroundColor = UIColor(hex: emergencyContact.color)
+            self.titleLabel.backgroundColor = UIColor(hex: emergencyContact.color)
             self.callButton.addTarget(self, action: #selector(callNumber), for: UIControl.Event.touchUpInside)
         }
     }

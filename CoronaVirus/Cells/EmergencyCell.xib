@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="304" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoronaVirus Health Information Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9w-YB-w7g">
-                                        <rect key="frame" x="8" y="7" width="288" height="35"/>
+                                        <rect key="frame" x="0.0" y="7" width="304" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -33,9 +33,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.28627450980000002" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="F9w-YB-w7g" firstAttribute="leading" secondItem="2A7-fV-o1H" secondAttribute="leading" constant="8" id="EhF-c5-MFK"/>
-                                    <constraint firstAttribute="trailing" secondItem="F9w-YB-w7g" secondAttribute="trailing" constant="8" id="UZZ-Wr-xFO"/>
-                                    <constraint firstAttribute="bottom" secondItem="F9w-YB-w7g" secondAttribute="bottom" constant="8" id="VgI-5p-TP0"/>
+                                    <constraint firstItem="F9w-YB-w7g" firstAttribute="leading" secondItem="2A7-fV-o1H" secondAttribute="leading" id="EhF-c5-MFK"/>
+                                    <constraint firstAttribute="trailing" secondItem="F9w-YB-w7g" secondAttribute="trailing" id="UZZ-Wr-xFO"/>
+                                    <constraint firstAttribute="bottom" secondItem="F9w-YB-w7g" secondAttribute="bottom" id="VgI-5p-TP0"/>
                                     <constraint firstAttribute="height" constant="50" id="eSF-m1-may"/>
                                     <constraint firstItem="F9w-YB-w7g" firstAttribute="top" secondItem="2A7-fV-o1H" secondAttribute="top" constant="7" id="kDQ-DR-t3H"/>
                                 </constraints>
@@ -88,7 +88,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                <color key="value" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                 <integer key="value" value="1"/>
