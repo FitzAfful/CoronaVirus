@@ -7,11 +7,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="MYNDRAIN.TTF">
-            <string>Myndraine</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -28,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-26" y="140"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Controller-->
         <scene sceneID="du1-lr-btI">
             <objects>
-                <tabBarController storyboardIdentifier="TabController" id="jdz-WS-8Do" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabController" id="jdz-WS-8Do" customClass="TabController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="bKG-nC-VsE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -75,9 +70,6 @@
                         <viewLayoutGuide key="safeArea" id="l87-He-mOK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="mZO-Id-mFM"/>
-                    <connections>
-                        <outlet property="tableView" destination="wvU-eS-gT2" id="Dp4-nj-mds"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hsz-7w-iQP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,54 +83,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUz-px-VMK">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fav" translatesAutoresizingMaskIntoConstraints="NO" id="gSk-4L-f5w">
-                                        <rect key="frame" x="8" y="131" width="398" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="GIO-0E-zuz"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your favorites are empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNo-cc-ryl">
-                                        <rect key="frame" x="8" y="199" width="398" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="x8o-fL-0m1"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Myndraine" family="Myndraine" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aY-He-wRc">
-                                        <rect key="frame" x="8" y="247" width="398" height="59"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="59" id="SWT-Sf-M76"/>
-                                        </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Save your favorite hymns by tapping on the heart button">
-                                                <attributes>
-                                                    <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="17"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="gSk-4L-f5w" firstAttribute="top" secondItem="CUz-px-VMK" secondAttribute="top" constant="131" id="6xD-dA-olv"/>
-                                    <constraint firstItem="gSk-4L-f5w" firstAttribute="leading" secondItem="CUz-px-VMK" secondAttribute="leading" constant="8" id="LeS-tP-IRY"/>
-                                    <constraint firstAttribute="trailing" secondItem="1aY-He-wRc" secondAttribute="trailing" constant="8" id="RnQ-Nl-xTo"/>
-                                    <constraint firstItem="vNo-cc-ryl" firstAttribute="leading" secondItem="CUz-px-VMK" secondAttribute="leading" constant="8" id="Vx3-hf-NgH"/>
-                                    <constraint firstItem="vNo-cc-ryl" firstAttribute="top" secondItem="gSk-4L-f5w" secondAttribute="bottom" constant="8" id="bF9-zl-xY0"/>
-                                    <constraint firstItem="1aY-He-wRc" firstAttribute="leading" secondItem="CUz-px-VMK" secondAttribute="leading" constant="8" id="oEK-ea-2fo"/>
-                                    <constraint firstAttribute="trailing" secondItem="vNo-cc-ryl" secondAttribute="trailing" constant="8" id="pjr-60-2v6"/>
-                                    <constraint firstAttribute="trailing" secondItem="gSk-4L-f5w" secondAttribute="trailing" constant="8" id="rEK-yT-euL"/>
-                                    <constraint firstItem="1aY-He-wRc" firstAttribute="top" secondItem="vNo-cc-ryl" secondAttribute="bottom" constant="8" id="snG-dV-3dy"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-gX-VNe">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -146,22 +90,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="qGb-gX-VNe" firstAttribute="bottom" secondItem="CUz-px-VMK" secondAttribute="bottom" id="4W7-rH-JcV"/>
-                            <constraint firstItem="FC8-9M-2pD" firstAttribute="bottom" secondItem="CUz-px-VMK" secondAttribute="bottom" id="6Vv-n5-gx5"/>
                             <constraint firstItem="qGb-gX-VNe" firstAttribute="top" secondItem="FC8-9M-2pD" secondAttribute="top" id="73J-Mf-nci"/>
-                            <constraint firstItem="qGb-gX-VNe" firstAttribute="leading" secondItem="CUz-px-VMK" secondAttribute="leading" id="H3K-ph-tb3"/>
-                            <constraint firstItem="CUz-px-VMK" firstAttribute="leading" secondItem="FC8-9M-2pD" secondAttribute="leading" id="OC0-kP-J8I"/>
-                            <constraint firstItem="FC8-9M-2pD" firstAttribute="trailing" secondItem="CUz-px-VMK" secondAttribute="trailing" id="ZFs-oH-ows"/>
-                            <constraint firstItem="CUz-px-VMK" firstAttribute="top" secondItem="FC8-9M-2pD" secondAttribute="top" id="ZKD-Fq-DhB"/>
-                            <constraint firstItem="qGb-gX-VNe" firstAttribute="trailing" secondItem="CUz-px-VMK" secondAttribute="trailing" id="ojJ-tI-R8E"/>
+                            <constraint firstItem="qGb-gX-VNe" firstAttribute="leading" secondItem="FC8-9M-2pD" secondAttribute="leading" id="BFO-dB-Ymo"/>
+                            <constraint firstItem="FC8-9M-2pD" firstAttribute="bottom" secondItem="qGb-gX-VNe" secondAttribute="bottom" id="F3F-3E-caC"/>
+                            <constraint firstItem="FC8-9M-2pD" firstAttribute="trailing" secondItem="qGb-gX-VNe" secondAttribute="trailing" id="YZZ-iR-fal"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FC8-9M-2pD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Symptoms" id="6Cu-1N-Mtz"/>
-                    <connections>
-                        <outlet property="emptyView" destination="CUz-px-VMK" id="DA2-Jz-j6b"/>
-                        <outlet property="tableView" destination="qGb-gX-VNe" id="dxF-4c-hti"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ucz-ax-2sD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,7 +248,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fav" width="16" height="16"/>
         <image name="icons8-info" width="25" height="25"/>
         <image name="icons8-news" width="25" height="25"/>
         <image name="icons8-person_at_home" width="25" height="25"/>

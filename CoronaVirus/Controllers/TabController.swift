@@ -1,5 +1,5 @@
 //
-//  AdviceController.swift
+//  TabController.swift
 //  CoronaVirus
 //
 //  Created by Fitzgerald Afful on 04/04/2020.
@@ -8,12 +8,10 @@
 
 import UIKit
 
-class AdviceController: UIViewController {
+class TabController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.disableDarkMode()
     }
-    
-
 }
