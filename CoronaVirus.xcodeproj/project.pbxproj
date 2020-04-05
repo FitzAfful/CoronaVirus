@@ -28,6 +28,7 @@
 		8426AA84243A5CB1003F6660 /* EmergencyContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA83243A5CB1003F6660 /* EmergencyContact.swift */; };
 		8426AA86243A5EC0003F6660 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA85243A5EC0003F6660 /* UIColor+Extension.swift */; };
 		8426AA88243A65F1003F6660 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA87243A65F1003F6660 /* UILabel+Extension.swift */; };
+		8426AA8A243A6A7D003F6660 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8426AA89243A6A7D003F6660 /* GoogleService-Info.plist */; };
 		84457C3B2438E2480071AD9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C3A2438E2480071AD9B /* AppDelegate.swift */; };
 		84457C3D2438E2480071AD9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C3C2438E2480071AD9B /* SceneDelegate.swift */; };
 		84457C422438E2480071AD9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84457C402438E2480071AD9B /* Main.storyboard */; };
@@ -78,7 +79,8 @@
 		8426AA83243A5CB1003F6660 /* EmergencyContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyContact.swift; sourceTree = "<group>"; };
 		8426AA85243A5EC0003F6660 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8426AA87243A65F1003F6660 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
-		84457C372438E2480071AD9B /* CoronaVirus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaVirus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8426AA89243A6A7D003F6660 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84457C372438E2480071AD9B /* Coronavirus Ghana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coronavirus Ghana.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84457C3A2438E2480071AD9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84457C3C2438E2480071AD9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		84457C412438E2480071AD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,7 +194,7 @@
 		84457C382438E2480071AD9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84457C372438E2480071AD9B /* CoronaVirus.app */,
+				84457C372438E2480071AD9B /* Coronavirus Ghana.app */,
 				84457C4D2438E24B0071AD9B /* CoronaVirusTests.xctest */,
 			);
 			name = Products;
@@ -201,6 +203,7 @@
 		84457C392438E2480071AD9B /* CoronaVirus */ = {
 			isa = PBXGroup;
 			children = (
+				8426AA89243A6A7D003F6660 /* GoogleService-Info.plist */,
 				8426AA7C243A55AA003F6660 /* Cells */,
 				8426AA6E243A47FC003F6660 /* Models */,
 				8426AA5A243A46F3003F6660 /* DataManager */,
@@ -281,7 +284,7 @@
 			);
 			name = CoronaVirus;
 			productName = CoronaVirus;
-			productReference = 84457C372438E2480071AD9B /* CoronaVirus.app */;
+			productReference = 84457C372438E2480071AD9B /* Coronavirus Ghana.app */;
 			productType = "com.apple.product-type.application";
 		};
 		84457C4C2438E24B0071AD9B /* CoronaVirusTests */ = {
@@ -348,6 +351,7 @@
 			files = (
 				84457C472438E24A0071AD9B /* LaunchScreen.storyboard in Resources */,
 				8426AA80243A55E1003F6660 /* EmergencyCell.xib in Resources */,
+				8426AA8A243A6A7D003F6660 /* GoogleService-Info.plist in Resources */,
 				84457C442438E24A0071AD9B /* Assets.xcassets in Resources */,
 				84457C422438E2480071AD9B /* Main.storyboard in Resources */,
 			);
@@ -626,7 +630,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = technation.CoronaVirus;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Coronavirus Ghana";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -645,7 +649,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = technation.CoronaVirus;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Coronavirus Ghana";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
