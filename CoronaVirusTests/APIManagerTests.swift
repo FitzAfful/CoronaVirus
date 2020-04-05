@@ -30,14 +30,14 @@ class APIManagerTests: XCTestCase {
 
     func test_getEmployees() {
 
-        let apiEndpoint = URL(string: APIRouter.getEmployees.path)!
+        let apiEndpoint = URL(string: APIRouter.getSummaryStats.path)!
         let requestExpectation = expectation(description: "Request should finish with Employees")
-        let responseFile = "employees"
+        let responseFile = "summary"
         guard let mockedData = dataFromTestBundleFile(fileName: responseFile, withExtension: "json") else {
             XCTFail("Error from JSON DeSerialization.jsonObject")
             return
         }
-        guard let mockResponse = try? JSONDecoder().decode(EmployeesResponse.self, from: mockedData) else {
+        guard let mockResponse = try? JSONDecoder().decode(SummaryStat.self, from: mockedData) else {
             XCTFail("Error from JSON DeSerialization.jsonObject")
             return
         }
@@ -45,7 +45,7 @@ class APIManagerTests: XCTestCase {
         let mock = Mock(url: apiEndpoint, dataType: .json, statusCode: 200, data: [.get: mockedData])
         mock.register()
 
-        manager.getEmployees { (result) in
+        manager.getSummaryStats { (result) in
             XCTAssertEqual(result.result.success!, mockResponse)
             XCTAssertNil(result.error)
             requestExpectation.fulfill()
@@ -54,31 +54,6 @@ class APIManagerTests: XCTestCase {
         wait(for: [requestExpectation], timeout: 10.0)
     }
 
-    func test_getSingleEmployee() {
-        let id = "24"
-        let apiEndpoint = URL(string: APIRouter.getSingleEmployee(id: id).path)!
-        let requestExpectation = expectation(description: "Request should finish with Employees")
-        let responseFile = "employee24"
-        guard let mockedData = dataFromTestBundleFile(fileName: responseFile, withExtension: "json") else {
-            XCTFail("Error from JSON DeSerialization.jsonObject")
-            return
-        }
-        guard let mockResponse = try? JSONDecoder().decode(EmployeeResponse.self, from: mockedData) else {
-            XCTFail("Error from JSON DeSerialization.jsonObject")
-            return
-        }
-
-        let mock = Mock(url: apiEndpoint, dataType: .json, statusCode: 200, data: [.get: mockedData])
-        mock.register()
-
-        manager.getSingleEmployee(id: id) { (result) in
-            XCTAssertEqual(result.result.success!, mockResponse)
-            XCTAssertNil(result.error)
-            requestExpectation.fulfill()
-        }
-
-        wait(for: [requestExpectation], timeout: 10.0)
-    }
 
 
     func verifyAndConvertToDictionary(data: Data?) -> [String: Any]? {
