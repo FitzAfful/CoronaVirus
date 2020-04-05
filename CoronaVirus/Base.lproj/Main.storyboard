@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jdz-WS-8Do">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -218,14 +219,29 @@
                     <view key="view" contentMode="scaleToFill" id="87V-5h-GIH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5wF-5C-XvC">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JaF-uL-WCc" firstAttribute="trailing" secondItem="5wF-5C-XvC" secondAttribute="trailing" id="ENY-tt-VlU"/>
+                            <constraint firstItem="5wF-5C-XvC" firstAttribute="top" secondItem="JaF-uL-WCc" secondAttribute="top" id="RC6-OM-m66"/>
+                            <constraint firstItem="5wF-5C-XvC" firstAttribute="leading" secondItem="JaF-uL-WCc" secondAttribute="leading" id="UdO-r5-35m"/>
+                            <constraint firstItem="JaF-uL-WCc" firstAttribute="bottom" secondItem="5wF-5C-XvC" secondAttribute="bottom" id="gmb-J9-bi7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JaF-uL-WCc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contact" largeTitleDisplayMode="always" id="e6j-DI-iE8"/>
+                    <connections>
+                        <outlet property="tableView" destination="5wF-5C-XvC" id="Oun-2l-y0Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoC-7T-vL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3929" y="816"/>
+            <point key="canvasLocation" x="3928.985507246377" y="815.625"/>
         </scene>
         <!--Contact-->
         <scene sceneID="qDT-bL-7ZZ">

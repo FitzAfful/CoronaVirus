@@ -22,6 +22,12 @@
 		8426AA76243A4B20003F6660 /* global.json in Resources */ = {isa = PBXBuildFile; fileRef = 8426AA75243A4B20003F6660 /* global.json */; };
 		8426AA79243A4F8B003F6660 /* GlobalStatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA78243A4F8B003F6660 /* GlobalStatTests.swift */; };
 		8426AA7B243A4F96003F6660 /* SummaryStatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA7A243A4F96003F6660 /* SummaryStatTests.swift */; };
+		8426AA7F243A55E1003F6660 /* EmergencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA7D243A55E1003F6660 /* EmergencyCell.swift */; };
+		8426AA80243A55E1003F6660 /* EmergencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8426AA7E243A55E1003F6660 /* EmergencyCell.xib */; };
+		8426AA82243A5A65003F6660 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA81243A5A65003F6660 /* UIView+Extension.swift */; };
+		8426AA84243A5CB1003F6660 /* EmergencyContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA83243A5CB1003F6660 /* EmergencyContact.swift */; };
+		8426AA86243A5EC0003F6660 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA85243A5EC0003F6660 /* UIColor+Extension.swift */; };
+		8426AA88243A65F1003F6660 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA87243A65F1003F6660 /* UILabel+Extension.swift */; };
 		84457C3B2438E2480071AD9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C3A2438E2480071AD9B /* AppDelegate.swift */; };
 		84457C3D2438E2480071AD9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C3C2438E2480071AD9B /* SceneDelegate.swift */; };
 		84457C422438E2480071AD9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84457C402438E2480071AD9B /* Main.storyboard */; };
@@ -66,6 +72,12 @@
 		8426AA75243A4B20003F6660 /* global.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = global.json; sourceTree = "<group>"; };
 		8426AA78243A4F8B003F6660 /* GlobalStatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalStatTests.swift; sourceTree = "<group>"; };
 		8426AA7A243A4F96003F6660 /* SummaryStatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryStatTests.swift; sourceTree = "<group>"; };
+		8426AA7D243A55E1003F6660 /* EmergencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyCell.swift; sourceTree = "<group>"; };
+		8426AA7E243A55E1003F6660 /* EmergencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmergencyCell.xib; sourceTree = "<group>"; };
+		8426AA81243A5A65003F6660 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8426AA83243A5CB1003F6660 /* EmergencyContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyContact.swift; sourceTree = "<group>"; };
+		8426AA85243A5EC0003F6660 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8426AA87243A65F1003F6660 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		84457C372438E2480071AD9B /* CoronaVirus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaVirus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84457C3A2438E2480071AD9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84457C3C2438E2480071AD9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				8426AA6F243A4829003F6660 /* CountryStat.swift */,
+				8426AA83243A5CB1003F6660 /* EmergencyContact.swift */,
 				8426AA71243A4966003F6660 /* GlobalStat.swift */,
 				8426AA73243A4A82003F6660 /* SummaryStat.swift */,
 			);
@@ -154,6 +167,15 @@
 				8426AA7A243A4F96003F6660 /* SummaryStatTests.swift */,
 			);
 			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		8426AA7C243A55AA003F6660 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8426AA7D243A55E1003F6660 /* EmergencyCell.swift */,
+				8426AA7E243A55E1003F6660 /* EmergencyCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		84457C2E2438E2480071AD9B = {
@@ -179,6 +201,7 @@
 		84457C392438E2480071AD9B /* CoronaVirus */ = {
 			isa = PBXGroup;
 			children = (
+				8426AA7C243A55AA003F6660 /* Cells */,
 				8426AA6E243A47FC003F6660 /* Models */,
 				8426AA5A243A46F3003F6660 /* DataManager */,
 				84457C692438F89E0071AD9B /* Extensions */,
@@ -221,6 +244,9 @@
 			isa = PBXGroup;
 			children = (
 				84457C6A2438F8C70071AD9B /* UIViewController+Extension.swift */,
+				8426AA81243A5A65003F6660 /* UIView+Extension.swift */,
+				8426AA85243A5EC0003F6660 /* UIColor+Extension.swift */,
+				8426AA87243A65F1003F6660 /* UILabel+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84457C472438E24A0071AD9B /* LaunchScreen.storyboard in Resources */,
+				8426AA80243A55E1003F6660 /* EmergencyCell.xib in Resources */,
 				84457C442438E24A0071AD9B /* Assets.xcassets in Resources */,
 				84457C422438E2480071AD9B /* Main.storyboard in Resources */,
 			);
@@ -419,10 +446,15 @@
 				8426AA61243A46F3003F6660 /* BaseNetworkManager.swift in Sources */,
 				8426AA74243A4A82003F6660 /* SummaryStat.swift in Sources */,
 				8426AA60243A46F3003F6660 /* APIRouter.swift in Sources */,
+				8426AA82243A5A65003F6660 /* UIView+Extension.swift in Sources */,
+				8426AA84243A5CB1003F6660 /* EmergencyContact.swift in Sources */,
 				84457C642438F6990071AD9B /* NewsController.swift in Sources */,
 				84457C3B2438E2480071AD9B /* AppDelegate.swift in Sources */,
+				8426AA7F243A55E1003F6660 /* EmergencyCell.swift in Sources */,
+				8426AA88243A65F1003F6660 /* UILabel+Extension.swift in Sources */,
 				8426AA62243A46F3003F6660 /* GenericDataSource.swift in Sources */,
 				84457C3D2438E2480071AD9B /* SceneDelegate.swift in Sources */,
+				8426AA86243A5EC0003F6660 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
