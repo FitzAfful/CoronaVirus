@@ -45,6 +45,7 @@
 		845ED2A6243ABD9200B72985 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2A4243ABD9200B72985 /* NewsCell.swift */; };
 		845ED2A7243ABD9200B72985 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2A5243ABD9200B72985 /* NewsCell.xib */; };
 		845ED2A9243ABE3C00B72985 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2A8243ABE3C00B72985 /* Date+Extension.swift */; };
+		845ED2AB243ABEC700B72985 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2AA243ABEC700B72985 /* UIImageView+Extension.swift */; };
 		E3FD203EBCF6F1D335829CE6 /* Pods_CoronaVirusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED15385189D9C80F828E028 /* Pods_CoronaVirusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		845ED2A4243ABD9200B72985 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		845ED2A5243ABD9200B72985 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		845ED2A8243ABE3C00B72985 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		845ED2AA243ABEC700B72985 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		DAAA8F5CAFFCBF2DFB183E21 /* Pods-CoronaVirusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirusTests.debug.xcconfig"; path = "Target Support Files/Pods-CoronaVirusTests/Pods-CoronaVirusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6C4B5986328C3E3401A57AC /* Pods-CoronaVirus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirus.release.xcconfig"; path = "Target Support Files/Pods-CoronaVirus/Pods-CoronaVirus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -262,6 +264,7 @@
 				8426AA85243A5EC0003F6660 /* UIColor+Extension.swift */,
 				8426AA87243A65F1003F6660 /* UILabel+Extension.swift */,
 				845ED2A8243ABE3C00B72985 /* Date+Extension.swift */,
+				845ED2AA243ABEC700B72985 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				84457C622438F68B0071AD9B /* AdviceController.swift in Sources */,
 				84457C662438F6A80071AD9B /* ContactController.swift in Sources */,
 				84457C5E2438F6580071AD9B /* HomeController.swift in Sources */,
+				845ED2AB243ABEC700B72985 /* UIImageView+Extension.swift in Sources */,
 				8426AA72243A4966003F6660 /* GlobalStat.swift in Sources */,
 				8426AA61243A46F3003F6660 /* BaseNetworkManager.swift in Sources */,
 				8426AA74243A4A82003F6660 /* SummaryStat.swift in Sources */,

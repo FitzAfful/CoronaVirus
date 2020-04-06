@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jdz-WS-8Do">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jdz-WS-8Do">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
         <!--Tab Controller-->
         <scene sceneID="du1-lr-btI">
             <objects>
-                <tabBarController storyboardIdentifier="TabController" id="jdz-WS-8Do" customClass="TabController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabController" id="jdz-WS-8Do" customClass="TabController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="bKG-nC-VsE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -51,9 +51,9 @@
         <!--Home-->
         <scene sceneID="hF1-XP-2VF">
             <objects>
-                <viewController storyboardIdentifier="HomeController" id="TsX-SB-va2" customClass="HomeController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeController" id="TsX-SB-va2" customClass="HomeController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ina-EH-aMe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wvU-eS-gT2">
@@ -79,9 +79,9 @@
         <!--Symptoms-->
         <scene sceneID="Ycp-kL-nXY">
             <objects>
-                <viewController storyboardIdentifier="SymptomsController" id="pGx-0P-tvf" customClass="SymptomsController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SymptomsController" id="pGx-0P-tvf" customClass="SymptomsController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AbL-Ha-bkJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-gX-VNe">
@@ -126,9 +126,9 @@
         <!--Advice-->
         <scene sceneID="k2C-W3-ATp">
             <objects>
-                <viewController storyboardIdentifier="AdviceController" id="4bh-V3-6i3" customClass="AdviceController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdviceController" id="4bh-V3-6i3" customClass="AdviceController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nu9-Zm-kQm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ANc-R5-fs4"/>
@@ -161,18 +161,33 @@
         <!--News-->
         <scene sceneID="FHa-xe-PSw">
             <objects>
-                <viewController storyboardIdentifier="NewsController" id="HhG-c6-gwT" customClass="NewsController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsController" id="HhG-c6-gwT" customClass="NewsController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9i-e7-Q7m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tdl-BD-njg">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aGP-R8-eAL" firstAttribute="bottom" secondItem="tdl-BD-njg" secondAttribute="bottom" id="2fa-sk-hc2"/>
+                            <constraint firstItem="aGP-R8-eAL" firstAttribute="trailing" secondItem="tdl-BD-njg" secondAttribute="trailing" id="DtA-Z2-MEg"/>
+                            <constraint firstItem="tdl-BD-njg" firstAttribute="leading" secondItem="aGP-R8-eAL" secondAttribute="leading" id="bbk-gQ-BeE"/>
+                            <constraint firstItem="tdl-BD-njg" firstAttribute="top" secondItem="aGP-R8-eAL" secondAttribute="top" id="tJE-9p-NIi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aGP-R8-eAL"/>
                     </view>
                     <navigationItem key="navigationItem" title="News" largeTitleDisplayMode="always" id="E0Q-C7-n1x"/>
+                    <connections>
+                        <outlet property="tableView" destination="tdl-BD-njg" id="HBg-Eo-9ff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvh-Ew-l7N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="816"/>
+            <point key="canvasLocation" x="2315.9420289855075" y="815.625"/>
         </scene>
         <!--Symptoms-->
         <scene sceneID="RYY-Xx-o9P">
@@ -215,9 +230,9 @@
         <!--Contact-->
         <scene sceneID="MSG-Ry-ugo">
             <objects>
-                <viewController storyboardIdentifier="ContactController" id="Xrf-Vn-3jB" customClass="ContactController" customModule="CoronaVirus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactController" id="Xrf-Vn-3jB" customClass="ContactController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="87V-5h-GIH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5wF-5C-XvC">

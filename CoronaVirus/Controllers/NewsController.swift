@@ -13,7 +13,7 @@ class NewsController: UIViewController {
     var manager: APIManager!
     var newsItems: [NewsItem] = []
     @IBOutlet weak var tableView: UITableView!
-    var cellTag = "EmergencyCell"
+    var cellTag = "NewsCell"
 
 
     override func viewDidLoad() {
@@ -62,12 +62,12 @@ extension NewsController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellTag, for: indexPath) as! EmergencyCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellTag, for: indexPath) as! NewsCell
         cell.item = self.newsItems[indexPath.row]
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200.0
+        return 100.0
     }
 }

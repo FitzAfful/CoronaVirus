@@ -10,12 +10,18 @@ import UIKit
 
 class NewsCell: UITableViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var newsImageView: UIImageView!
+
     var item: NewsItem? {
         didSet {
             guard let newsItem = item else { return }
             self.titleLabel.text = newsItem.title
-            self.descriptionLabel.text = newsItem.details
-            self.dateLabel.text = 
+            self.dateLabel.text = newsItem.date.timeAgoSince()
+            if let url = newsItem.imageUrl {
+                self.newsImageView.setImage(url: url)
+            }
         }
     }
     
