@@ -6,6 +6,7 @@ PODS:
   - DTPhotoViewerController (3.1.0)
   - ESPullToRefresh (2.9.2)
   - Fabric (1.10.2)
+  - FeedKit (9.0.0)
   - Firebase/Auth (6.21.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.5.1)
@@ -129,6 +130,7 @@ DEPENDENCIES:
   - DTPhotoViewerController
   - ESPullToRefresh
   - Fabric
+  - FeedKit
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -149,6 +151,7 @@ SPEC REPOS:
     - DTPhotoViewerController
     - ESPullToRefresh
     - Fabric
+    - FeedKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseAnalyticsInterop
@@ -185,6 +188,7 @@ SPEC CHECKSUMS:
   DTPhotoViewerController: 2b5e64792ee89fcab1f154538577d1856e04e15b
   ESPullToRefresh: efed00d52597065e9a84e1e52fa444fdb1a1dee0
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  FeedKit: 9ffa2434af293df73ac069129900498b3f89cb2e
   Firebase: f378c80340dd41c0ad0914af740c021eb282a04b
   FirebaseAnalytics: a1a0b3327ceb5cd5b4bacffdb293f6c909aa087d
   FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
@@ -214,6 +218,6 @@ SPEC CHECKSUMS:
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
   SkeletonView: ba5370f41280b2f0a76918bb143c1294232bb4f4
 
-PODFILE CHECKSUM: b9e2e950fdae20a5e51419a62ea690ad6d9ed5ff
+PODFILE CHECKSUM: a186ae2454e52f27a1447fb802ef604116d17dca
 
 COCOAPODS: 1.8.4

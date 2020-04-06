@@ -12,11 +12,14 @@ import Alamofire
 enum APIRouter : APIConfiguration {
 	
 	case getSummaryStats
-	
+	case getNews
+
 	internal var method: HTTPMethod {
 		switch self {
 		case .getSummaryStats:
 			return .get
+        case .getNews:
+            return .get
 		}
 	}
 	
@@ -24,6 +27,8 @@ enum APIRouter : APIConfiguration {
 		switch self {
         case .getSummaryStats:
             return "https://api.covid19api.com/summary"
+        case .getNews:
+            return "https://www.who.int/rss-feeds/news-english.xml"
 		}
 	}
 	

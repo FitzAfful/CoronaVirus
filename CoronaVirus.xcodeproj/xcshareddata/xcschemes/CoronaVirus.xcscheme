@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84457C362438E2480071AD9B"
-               BuildableName = "CoronaVirus.app"
+               BuildableName = "Coronavirus Ghana.app"
                BlueprintName = "CoronaVirus"
                ReferencedContainer = "container:CoronaVirus.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84457C362438E2480071AD9B"
-            BuildableName = "CoronaVirus.app"
+            BuildableName = "Coronavirus Ghana.app"
             BlueprintName = "CoronaVirus"
             ReferencedContainer = "container:CoronaVirus.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84457C362438E2480071AD9B"
-            BuildableName = "CoronaVirus.app"
+            BuildableName = "Coronavirus Ghana.app"
             BlueprintName = "CoronaVirus"
             ReferencedContainer = "container:CoronaVirus.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84457C362438E2480071AD9B"
-            BuildableName = "CoronaVirus.app"
+            BuildableName = "Coronavirus Ghana.app"
             BlueprintName = "CoronaVirus"
             ReferencedContainer = "container:CoronaVirus.xcodeproj">
          </BuildableReference>

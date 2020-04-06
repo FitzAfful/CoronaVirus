@@ -24,6 +24,7 @@ target ‘CoronaVirus’ do
     pod 'Crashlytics'
     pod "DTPhotoViewerController"
     pod 'Mocker'
+    pod 'FeedKit'
 		
     target 'CoronaVirusTests' do
         inherit! :search_paths

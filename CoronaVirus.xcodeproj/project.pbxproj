@@ -41,6 +41,10 @@
 		84457C662438F6A80071AD9B /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C652438F6A80071AD9B /* ContactController.swift */; };
 		84457C682438F7E10071AD9B /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C672438F7E10071AD9B /* TabController.swift */; };
 		84457C6B2438F8C70071AD9B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C6A2438F8C70071AD9B /* UIViewController+Extension.swift */; };
+		845ED2A3243AB8CA00B72985 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2A2243AB8CA00B72985 /* NewsItem.swift */; };
+		845ED2A6243ABD9200B72985 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2A4243ABD9200B72985 /* NewsCell.swift */; };
+		845ED2A7243ABD9200B72985 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2A5243ABD9200B72985 /* NewsCell.xib */; };
+		845ED2A9243ABE3C00B72985 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2A8243ABE3C00B72985 /* Date+Extension.swift */; };
 		E3FD203EBCF6F1D335829CE6 /* Pods_CoronaVirusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED15385189D9C80F828E028 /* Pods_CoronaVirusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +100,10 @@
 		84457C652438F6A80071AD9B /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		84457C672438F7E10071AD9B /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		84457C6A2438F8C70071AD9B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		845ED2A2243AB8CA00B72985 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		845ED2A4243ABD9200B72985 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		845ED2A5243ABD9200B72985 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		845ED2A8243ABE3C00B72985 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		DAAA8F5CAFFCBF2DFB183E21 /* Pods-CoronaVirusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirusTests.debug.xcconfig"; path = "Target Support Files/Pods-CoronaVirusTests/Pods-CoronaVirusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6C4B5986328C3E3401A57AC /* Pods-CoronaVirus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirus.release.xcconfig"; path = "Target Support Files/Pods-CoronaVirus/Pods-CoronaVirus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +165,7 @@
 				8426AA83243A5CB1003F6660 /* EmergencyContact.swift */,
 				8426AA71243A4966003F6660 /* GlobalStat.swift */,
 				8426AA73243A4A82003F6660 /* SummaryStat.swift */,
+				845ED2A2243AB8CA00B72985 /* NewsItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +185,8 @@
 			children = (
 				8426AA7D243A55E1003F6660 /* EmergencyCell.swift */,
 				8426AA7E243A55E1003F6660 /* EmergencyCell.xib */,
+				845ED2A4243ABD9200B72985 /* NewsCell.swift */,
+				845ED2A5243ABD9200B72985 /* NewsCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -250,6 +261,7 @@
 				8426AA81243A5A65003F6660 /* UIView+Extension.swift */,
 				8426AA85243A5EC0003F6660 /* UIColor+Extension.swift */,
 				8426AA87243A65F1003F6660 /* UILabel+Extension.swift */,
+				845ED2A8243ABE3C00B72985 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -349,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845ED2A7243ABD9200B72985 /* NewsCell.xib in Resources */,
 				84457C472438E24A0071AD9B /* LaunchScreen.storyboard in Resources */,
 				8426AA80243A55E1003F6660 /* EmergencyCell.xib in Resources */,
 				8426AA8A243A6A7D003F6660 /* GoogleService-Info.plist in Resources */,
@@ -442,6 +455,8 @@
 				84457C6B2438F8C70071AD9B /* UIViewController+Extension.swift in Sources */,
 				84457C602438F67D0071AD9B /* SymptomsController.swift in Sources */,
 				8426AA5F243A46F3003F6660 /* APIManager.swift in Sources */,
+				845ED2A6243ABD9200B72985 /* NewsCell.swift in Sources */,
+				845ED2A9243ABE3C00B72985 /* Date+Extension.swift in Sources */,
 				84457C682438F7E10071AD9B /* TabController.swift in Sources */,
 				84457C622438F68B0071AD9B /* AdviceController.swift in Sources */,
 				84457C662438F6A80071AD9B /* ContactController.swift in Sources */,
@@ -457,6 +472,7 @@
 				8426AA7F243A55E1003F6660 /* EmergencyCell.swift in Sources */,
 				8426AA88243A65F1003F6660 /* UILabel+Extension.swift in Sources */,
 				8426AA62243A46F3003F6660 /* GenericDataSource.swift in Sources */,
+				845ED2A3243AB8CA00B72985 /* NewsItem.swift in Sources */,
 				84457C3D2438E2480071AD9B /* SceneDelegate.swift in Sources */,
 				8426AA86243A5EC0003F6660 /* UIColor+Extension.swift in Sources */,
 			);
