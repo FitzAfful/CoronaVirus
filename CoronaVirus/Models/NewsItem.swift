@@ -20,12 +20,16 @@ public class NewsItem : Codable, Equatable {
         self.description = description
         self.link = link
         self.date = date
-        if description.components(separatedBy: "\" alt=\"").count > 1 {
-            let firstImageString = description.components(separatedBy: "\" alt=\"")[0]
+        print(description)
+        if description.components(separatedBy: "?sfvrsn").count > 1 {
+            let firstImageString = description.components(separatedBy: "?sfvrsn")[0]
             let imageString = firstImageString.components(separatedBy: "src=\"")[1]
             print(imageString)
             self.imageUrl = URL(string: imageString)
         }
+        print(link)
+        print("*********************************************************************")
+        print(" ")
     }
 
     public static func == (lhs: NewsItem, rhs: NewsItem) -> Bool {
@@ -40,4 +44,3 @@ public class NewsResponse : Codable {
         self.data = data
     }
 }
-

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class NewsController: UIViewController {
 
@@ -14,7 +15,6 @@ class NewsController: UIViewController {
     var newsItems: [NewsItem] = []
     @IBOutlet weak var tableView: UITableView!
     var cellTag = "NewsCell"
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,10 +64,24 @@ extension NewsController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellTag, for: indexPath) as! NewsCell
         cell.item = self.newsItems[indexPath.row]
+        if let url = self.newsItems[indexPath.row].imageUrl {
+            cell.newsImageView.setImage(url: url)
+        }else {
+            cell.newsImageView.image = nil
+            cell.newsImageView.image = UIImage(named: "logo")
+        }
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let link = self.newsItems[indexPath.row].link
+        if let url = URL(string: link) {
+            let vc1 = SFSafariViewController(url: url)
+            self.present(vc1, animated: true)
+        }
     }
 }

@@ -19,9 +19,6 @@ class NewsCell: UITableViewCell {
             guard let newsItem = item else { return }
             self.titleLabel.text = newsItem.title
             self.dateLabel.text = newsItem.date.timeAgoSince()
-            if let url = newsItem.imageUrl {
-                self.newsImageView.setImage(url: url)
-            }
         }
     }
     
