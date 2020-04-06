@@ -13,7 +13,7 @@ class SymptomsController: UITableViewController {
 
     @IBOutlet weak var symptomLabel: UILabel!
 
-    let symptoms = "People with coronavirus may experience: \n\n•  Fever\n\n•  Flu-like symptons such as coughing, sore throat and fatigue\n\n•  Shortness of breath\n\nHeadache\n\n•  If you are concerned you may have COVID-19, use the symptom checker below\n\n"
+    let symptoms = "People with coronavirus may experience: \n\n•  Fever\n\n•  Flu-like symptons such as coughing, sore throat and fatigue\n\n•  Shortness of breath\n\n•  Headache\n\nIf you are concerned you may have COVID-19, use the symptom checker below\n\n"
 
     override func viewDidLoad() {
         super.viewDidLoad()

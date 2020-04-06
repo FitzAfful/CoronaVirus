@@ -27,6 +27,9 @@ class HomeController: UITableViewController {
         super.viewDidLoad()
         self.disableDarkMode()
 
+        self.refreshControl = UIRefreshControl()
+        self.tableView.addSubview(self.refreshControl!)
+        self.tableView.alwaysBounceVertical = true
         self.refreshControl?.addTarget(self, action: #selector(self.refreshTable), for: .valueChanged)
         
         if let dictionary = UserDefaults.standard.dictionary(forKey: "stats") {
