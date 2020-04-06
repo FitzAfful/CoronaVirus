@@ -29,6 +29,7 @@
 		8426AA86243A5EC0003F6660 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA85243A5EC0003F6660 /* UIColor+Extension.swift */; };
 		8426AA88243A65F1003F6660 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AA87243A65F1003F6660 /* UILabel+Extension.swift */; };
 		8426AA8A243A6A7D003F6660 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8426AA89243A6A7D003F6660 /* GoogleService-Info.plist */; };
+		84355406243B2C8300AA6CE3 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84355405243B2C8300AA6CE3 /* UIButton+Extension.swift */; };
 		84457C3B2438E2480071AD9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C3A2438E2480071AD9B /* AppDelegate.swift */; };
 		84457C3D2438E2480071AD9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C3C2438E2480071AD9B /* SceneDelegate.swift */; };
 		84457C422438E2480071AD9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84457C402438E2480071AD9B /* Main.storyboard */; };
@@ -92,6 +93,8 @@
 		8426AA85243A5EC0003F6660 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8426AA87243A65F1003F6660 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		8426AA89243A6A7D003F6660 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84355405243B2C8300AA6CE3 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		84355407243B378000AA6CE3 /* Coronavirus Ghana.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Coronavirus Ghana.entitlements"; sourceTree = "<group>"; };
 		84457C372438E2480071AD9B /* Coronavirus Ghana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coronavirus Ghana.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84457C3A2438E2480071AD9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84457C3C2438E2480071AD9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -230,6 +233,7 @@
 		84457C392438E2480071AD9B /* CoronaVirus */ = {
 			isa = PBXGroup;
 			children = (
+				84355407243B378000AA6CE3 /* Coronavirus Ghana.entitlements */,
 				845ED2AC243AEB6000B72985 /* Fonts */,
 				8426AA89243A6A7D003F6660 /* GoogleService-Info.plist */,
 				8426AA7C243A55AA003F6660 /* Cells */,
@@ -280,6 +284,7 @@
 				8426AA87243A65F1003F6660 /* UILabel+Extension.swift */,
 				845ED2A8243ABE3C00B72985 /* Date+Extension.swift */,
 				845ED2AA243ABEC700B72985 /* UIImageView+Extension.swift */,
+				84355405243B2C8300AA6CE3 /* UIButton+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 				8426AA61243A46F3003F6660 /* BaseNetworkManager.swift in Sources */,
 				8426AA74243A4A82003F6660 /* SummaryStat.swift in Sources */,
 				8426AA60243A46F3003F6660 /* APIRouter.swift in Sources */,
+				84355406243B2C8300AA6CE3 /* UIButton+Extension.swift in Sources */,
 				8426AA82243A5A65003F6660 /* UIView+Extension.swift in Sources */,
 				8426AA84243A5CB1003F6660 /* EmergencyContact.swift in Sources */,
 				84457C642438F6990071AD9B /* NewsController.swift in Sources */,
@@ -678,13 +684,16 @@
 			baseConfigurationReference = 241CBCC16ED638EA4EE9F553 /* Pods-CoronaVirus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "CoronaVirus/Coronavirus Ghana.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R59NXK675;
 				INFOPLIST_FILE = CoronaVirus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.01;
 				PRODUCT_BUNDLE_IDENTIFIER = technation.CoronaVirus;
 				PRODUCT_NAME = "Coronavirus Ghana";
 				SWIFT_VERSION = 5.0;
@@ -697,13 +706,16 @@
 			baseConfigurationReference = E6C4B5986328C3E3401A57AC /* Pods-CoronaVirus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "CoronaVirus/Coronavirus Ghana.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R59NXK675;
 				INFOPLIST_FILE = CoronaVirus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.01;
 				PRODUCT_BUNDLE_IDENTIFIER = technation.CoronaVirus;
 				PRODUCT_NAME = "Coronavirus Ghana";
 				SWIFT_VERSION = 5.0;

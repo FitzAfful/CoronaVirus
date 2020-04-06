@@ -15,6 +15,7 @@ class NewsController: UIViewController {
     var newsItems: [NewsItem] = []
     @IBOutlet weak var tableView: UITableView!
     var cellTag = "NewsCell"
+    private let refreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +26,20 @@ class NewsController: UIViewController {
         self.tableView.delegate = self
         self.tableView.tableFooterView = UIView()
 
+        self.tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(self.refreshTable), for: .valueChanged)
+
+
         if let dictionary = UserDefaults.standard.dictionary(forKey: "news") {
             if let object = try? DictionaryDecoder().decode(NewsResponse.self, from: dictionary){
                 self.newsItems = object.data
                 self.tableView.reloadData()
             }
         }
+        self.getNews()
+    }
+
+    @objc func refreshTable(toRefresh sender: UIRefreshControl?) {
         self.getNews()
     }
 
@@ -46,6 +55,7 @@ class NewsController: UIViewController {
                     let response = NewsResponse(data: self.newsItems)
                     UserDefaults.standard.set(response.dictionary, forKey: "news")
                     self.tableView.reloadData()
+                    self.refreshControl.endRefreshing()
                 }
             case .failure(let error):
                 print("Error: \(error.failureReason!)")
@@ -65,10 +75,14 @@ extension NewsController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellTag, for: indexPath) as! NewsCell
         cell.item = self.newsItems[indexPath.row]
         if let url = self.newsItems[indexPath.row].imageUrl {
+            cell.newsImageView.contentMode = .scaleToFill
             cell.newsImageView.setImage(url: url)
+            cell.newsImageView.contentMode = .scaleToFill
         }else {
             cell.newsImageView.image = nil
-            cell.newsImageView.image = UIImage(named: "logo")
+            cell.newsImageView.contentMode = .scaleAspectFit
+            cell.newsImageView.image = UIImage(named: "icons8-news-1")
+            cell.newsImageView.contentMode = .scaleAspectFit
         }
         return cell
     }

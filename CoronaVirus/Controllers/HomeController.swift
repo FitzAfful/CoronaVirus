@@ -26,6 +26,9 @@ class HomeController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.disableDarkMode()
+
+        self.refreshControl?.addTarget(self, action: #selector(self.refreshTable), for: .valueChanged)
+        
         if let dictionary = UserDefaults.standard.dictionary(forKey: "stats") {
             if let object = try? DictionaryDecoder().decode(SummaryStat.self, from: dictionary){
                 self.statistics = object
@@ -34,7 +37,11 @@ class HomeController: UITableViewController {
         }
         self.getStatistics()
     }
-    
+
+    @objc func refreshTable(toRefresh sender: UIRefreshControl?) {
+        self.getStatistics()
+    }
+
     @IBAction func viewOffers(_ sender: Any) {
         let link = "https://technationgh.com/stay-at-home-offers/"
         if let url = URL(string: link) {
@@ -53,6 +60,7 @@ class HomeController: UITableViewController {
                 self.statistics = response
                 self.loader.isHidden = true
                 self.setStatistics()
+                self.tableView.refreshControl?.endRefreshing()
             case .failure:
             self.loader.isHidden = true
                 self.showAlert(withTitle: "Error", message: "Could not retrieve latest statistics. Please try again later.")

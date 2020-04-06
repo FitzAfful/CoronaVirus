@@ -57,32 +57,154 @@
             <point key="canvasLocation" x="780" y="141"/>
         </scene>
         <!--Symptoms-->
-        <scene sceneID="Ycp-kL-nXY">
+        <scene sceneID="d7f-EH-FjR">
             <objects>
-                <viewController storyboardIdentifier="SymptomsController" id="pGx-0P-tvf" customClass="SymptomsController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AbL-Ha-bkJ">
+                <tableViewController storyboardIdentifier="SymptomsController" id="zyd-qe-38v" customClass="SymptomsController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WkD-dJ-NGM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-gX-VNe">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="qGb-gX-VNe" firstAttribute="top" secondItem="FC8-9M-2pD" secondAttribute="top" id="73J-Mf-nci"/>
-                            <constraint firstItem="qGb-gX-VNe" firstAttribute="leading" secondItem="FC8-9M-2pD" secondAttribute="leading" id="BFO-dB-Ymo"/>
-                            <constraint firstItem="FC8-9M-2pD" firstAttribute="bottom" secondItem="qGb-gX-VNe" secondAttribute="bottom" id="F3F-3E-caC"/>
-                            <constraint firstItem="FC8-9M-2pD" firstAttribute="trailing" secondItem="qGb-gX-VNe" secondAttribute="trailing" id="YZZ-iR-fal"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="FC8-9M-2pD"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Symptoms" id="6Cu-1N-Mtz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ucz-ax-2sD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection id="FTH-L9-bi5">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="582" id="g3e-nq-dUv">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="582"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g3e-nq-dUv" id="Cqq-So-iir">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="582"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxG-3i-acr">
+                                                    <rect key="frame" x="20" y="11" width="374" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="9pu-qK-ChM"/>
+                                                    </constraints>
+                                                    <string key="text">Symptoms of COVID-19 can range from mild illness to pneumonia. Some people will recover easily, and others may get very sick very quickly.</string>
+                                                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-7h-eXO">
+                                                    <rect key="frame" x="20" y="307" width="374" height="260"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="260" id="Njz-j9-r81"/>
+                                                    </constraints>
+                                                    <string key="text">Symptoms of COVID-19 can range from mild illness to pneumonia. Some people will recover easily, and others may get very sick very quickly.</string>
+                                                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="symptoms_page" translatesAutoresizingMaskIntoConstraints="NO" id="3ja-DB-Z7B">
+                                                    <rect key="frame" x="20" y="119" width="374" height="180"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="180" id="A5l-4S-b3r"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="cxG-3i-acr" secondAttribute="trailing" constant="20" id="KJs-bt-cRM"/>
+                                                <constraint firstAttribute="trailing" secondItem="fI0-7h-eXO" secondAttribute="trailing" constant="20" id="TCH-fj-89j"/>
+                                                <constraint firstItem="cxG-3i-acr" firstAttribute="top" secondItem="Cqq-So-iir" secondAttribute="top" constant="11" id="TaZ-OU-JdV"/>
+                                                <constraint firstItem="3ja-DB-Z7B" firstAttribute="leading" secondItem="Cqq-So-iir" secondAttribute="leading" constant="20" id="ZH3-lZ-rfn"/>
+                                                <constraint firstAttribute="trailing" secondItem="3ja-DB-Z7B" secondAttribute="trailing" constant="20" id="esB-dn-yhx"/>
+                                                <constraint firstItem="3ja-DB-Z7B" firstAttribute="top" secondItem="cxG-3i-acr" secondAttribute="bottom" constant="8" id="fNJ-Te-uPJ"/>
+                                                <constraint firstItem="fI0-7h-eXO" firstAttribute="leading" secondItem="Cqq-So-iir" secondAttribute="leading" constant="20" id="fZW-ys-zgC"/>
+                                                <constraint firstItem="cxG-3i-acr" firstAttribute="leading" secondItem="Cqq-So-iir" secondAttribute="leading" constant="20" id="ngR-io-8Mq"/>
+                                                <constraint firstItem="fI0-7h-eXO" firstAttribute="top" secondItem="3ja-DB-Z7B" secondAttribute="bottom" constant="8" id="p5H-XV-625"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="85" id="nOg-87-vr9">
+                                        <rect key="frame" x="0.0" y="610" width="414" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nOg-87-vr9" id="Ee2-Ja-uiQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="khr-4d-dG0">
+                                                    <rect key="frame" x="20" y="20" width="374" height="45"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhI-JB-6KZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="178.5" height="45"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="45" id="lAP-v1-EWy"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="16"/>
+                                                            <color key="tintColor" name="colorPrimary"/>
+                                                            <state key="normal" title="Symptom Checker">
+                                                                <color key="titleColor" name="colorPrimary"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" name="colorPrimary"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="22.5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="checkSymptoms:" destination="zyd-qe-38v" eventType="touchUpInside" id="Mr2-bg-Ieh"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejm-dO-rGI">
+                                                            <rect key="frame" x="195.5" y="0.0" width="178.5" height="45"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="45" id="xpp-ax-ZPU"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="16"/>
+                                                            <color key="tintColor" name="colorPrimary"/>
+                                                            <state key="normal" title="Learn More">
+                                                                <color key="titleColor" name="colorPrimary"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" name="colorPrimary"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="22.5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="learnMore:" destination="zyd-qe-38v" eventType="touchUpInside" id="z9H-1E-gGs"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="RHW-rR-Fa1"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="khr-4d-dG0" secondAttribute="trailing" constant="20" id="7fr-Hf-okQ"/>
+                                                <constraint firstItem="khr-4d-dG0" firstAttribute="leading" secondItem="Ee2-Ja-uiQ" secondAttribute="leading" constant="20" id="Aku-rc-HxR"/>
+                                                <constraint firstItem="khr-4d-dG0" firstAttribute="top" secondItem="Ee2-Ja-uiQ" secondAttribute="top" constant="20" id="dd9-oR-ue4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="zyd-qe-38v" id="GZg-SH-6YZ"/>
+                            <outlet property="delegate" destination="zyd-qe-38v" id="ToC-7B-2sE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Symptoms" largeTitleDisplayMode="always" id="JIx-7d-k58"/>
+                    <connections>
+                        <outlet property="symptomLabel" destination="fI0-7h-eXO" id="4QX-67-sOB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHM-DP-mzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3929" y="141"/>
+            <point key="canvasLocation" x="3928.985507246377" y="140.625"/>
         </scene>
         <!--Advice-->
         <scene sceneID="vKY-AN-bqo">
@@ -261,7 +383,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xR7-m7-rFr">
                                                             <rect key="frame" x="196" y="0.0" width="178" height="128"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Critical Cases" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uk-5Z-KSQ">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Confirmed Cases" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uk-5Z-KSQ">
                                                                     <rect key="frame" x="8" y="8" width="162" height="61"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="61" id="bgL-TE-8tN"/>
@@ -666,6 +788,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="yNa-5v-mJN"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="BKj-Bb-H9X">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                     <connections>
                         <outlet property="ghanaConfirmedLabel" destination="py0-8q-ZGr" id="iwI-uv-vuQ"/>
                         <outlet property="ghanaCriticalLabel" destination="pWH-Sg-XZm" id="MpE-4Z-73y"/>
@@ -727,7 +852,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="pGx-0P-tvf" kind="relationship" relationship="rootViewController" id="2hj-Ja-ZSF"/>
+                        <segue destination="zyd-qe-38v" kind="relationship" relationship="rootViewController" id="MaG-LO-am2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urt-Ua-8ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -817,8 +942,9 @@
         <image name="icons8-phone_not_being_used" width="25" height="25"/>
         <image name="icons8-symptom" width="25" height="25"/>
         <image name="recovered" width="128" height="128"/>
+        <image name="symptoms_page" width="750" height="411"/>
         <namedColor name="colorPrimary">
-            <color red="0.050980392156862744" green="0.29803921568627451" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.050999999046325684" green="0.29800000786781311" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

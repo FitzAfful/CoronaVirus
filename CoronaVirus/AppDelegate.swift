@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         if let userInfo = launchOptions?[UIApplication.LaunchOptionsKey.remoteNotification] {
             NSLog("[RemoteNotification] applicationState: \(applicationStateString) didFinishLaunchingWithOptions for iOS9: \(userInfo)")
         }
+        application.registerForRemoteNotifications()
+        requestNotificationAuthorization(application: application)
         NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.tokenRefreshNotification),
                                                name: NSNotification.Name.InstanceIDTokenRefresh, object: nil)
 

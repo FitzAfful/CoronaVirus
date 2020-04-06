@@ -13,11 +13,13 @@ public class EmergencyContact : Codable {
     var details: String
     var contactNumber: String
     var color: String
+    var isWebsite: Bool
 
-    init( title: String, details: String, contactNumber: String, color: String) {
+    init( title: String, details: String, contactNumber: String, color: String, isWebsite: Bool) {
         self.title = title
         self.details = details
         self.contactNumber = contactNumber
         self.color = color
+        self.isWebsite = isWebsite
     }
 }
