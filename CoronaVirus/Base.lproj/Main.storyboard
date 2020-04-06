@@ -8,6 +8,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarkPro-Bold.otf">
+            <string>MarkPro-Bold</string>
+        </array>
+        <array key="MarkPro.otf">
+            <string>MarkPro</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -53,7 +61,7 @@
             <objects>
                 <viewController storyboardIdentifier="SymptomsController" id="pGx-0P-tvf" customClass="SymptomsController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AbL-Ha-bkJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-gX-VNe">
@@ -100,7 +108,7 @@
             <objects>
                 <viewController storyboardIdentifier="AdviceController" id="4bh-V3-6i3" customClass="AdviceController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nu9-Zm-kQm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ANc-R5-fs4"/>
@@ -138,7 +146,7 @@
             <objects>
                 <tableViewController id="CLb-i1-AYg" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="a4F-Wv-AJh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
@@ -163,7 +171,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="39" id="0GP-1G-POD"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -172,7 +180,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="39" id="EyN-9y-Gth"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -194,7 +202,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="61" id="9g7-oh-hbp"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -203,7 +211,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="53" id="Ulp-8i-5Ez"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="25"/>
                                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -258,7 +266,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="61" id="bgL-TE-8tN"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -267,7 +275,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="53" id="aMJ-wv-IFJ"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="25"/>
                                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -328,7 +336,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="61" id="RWO-xA-Gr7"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -337,7 +345,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="53" id="hmM-1P-Rch"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="25"/>
                                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -392,7 +400,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="61" id="RcY-gF-YD3"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -401,7 +409,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="53" id="7AY-fP-H0n"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="25"/>
                                                                     <color key="textColor" name="colorPrimary"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -474,7 +482,7 @@
                                                                 <constraint firstAttribute="width" constant="158" id="cB3-32-m1b"/>
                                                                 <constraint firstAttribute="height" constant="37" id="iqf-r7-olI"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -484,7 +492,7 @@
                                                                 <constraint firstAttribute="height" constant="37" id="XoO-id-X9W"/>
                                                                 <constraint firstAttribute="width" constant="171" id="wkF-Vv-YgY"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -494,7 +502,7 @@
                                                                 <constraint firstAttribute="height" constant="37" id="cGt-yj-76c"/>
                                                                 <constraint firstAttribute="width" constant="171" id="uq2-zs-iV6"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -504,7 +512,7 @@
                                                                 <constraint firstAttribute="width" constant="192" id="GzN-m8-Uij"/>
                                                                 <constraint firstAttribute="height" constant="53" id="cHf-98-4nG"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="21"/>
                                                             <color key="textColor" name="colorPrimary"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -514,7 +522,7 @@
                                                                 <constraint firstAttribute="width" constant="192" id="9Or-Lv-Xgz"/>
                                                                 <constraint firstAttribute="height" constant="53" id="fP9-QI-D6y"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="21"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -524,7 +532,7 @@
                                                                 <constraint firstAttribute="height" constant="53" id="alV-vL-fdd"/>
                                                                 <constraint firstAttribute="width" constant="192" id="iWI-RZ-ENg"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="21"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -580,7 +588,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="39" id="ZWE-d1-2dq"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -592,13 +600,13 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Many corporations and people are already rising to the occasion by helping others with offers. Tap to check them out" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMN-Qe-4w6">
-                                                    <rect key="frame" x="20" y="659" width="373" height="61"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="20" y="659" width="373" height="59.5"/>
+                                                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N01-jn-0nn">
-                                                    <rect key="frame" x="20" y="659" width="373" height="64"/>
+                                                    <rect key="frame" x="20" y="659" width="373" height="62.5"/>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -659,7 +667,7 @@
             <objects>
                 <viewController storyboardIdentifier="NewsController" id="HhG-c6-gwT" customClass="NewsController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9i-e7-Q7m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tdl-BD-njg">
@@ -734,7 +742,7 @@
             <objects>
                 <viewController storyboardIdentifier="ContactController" id="Xrf-Vn-3jB" customClass="ContactController" customModule="Coronavirus_Ghana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="87V-5h-GIH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5wF-5C-XvC">

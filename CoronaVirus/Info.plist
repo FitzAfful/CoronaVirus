@@ -58,5 +58,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>MarkPro.otf</string>
+		<string>MarkPro-Book.otf</string>
+		<string>MarkPro-Bold.otf</string>
+	</array>
 </dict>
 </plist>

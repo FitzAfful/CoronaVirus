@@ -46,6 +46,13 @@
 		845ED2A7243ABD9200B72985 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2A5243ABD9200B72985 /* NewsCell.xib */; };
 		845ED2A9243ABE3C00B72985 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2A8243ABE3C00B72985 /* Date+Extension.swift */; };
 		845ED2AB243ABEC700B72985 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2AA243ABEC700B72985 /* UIImageView+Extension.swift */; };
+		845ED2B4243AEB6000B72985 /* MarkPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2AD243AEB6000B72985 /* MarkPro-Black.otf */; };
+		845ED2B5243AEB6000B72985 /* MarkPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2AE243AEB6000B72985 /* MarkPro-Bold.otf */; };
+		845ED2B6243AEB6000B72985 /* MarkPro-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2AF243AEB6000B72985 /* MarkPro-Book.otf */; };
+		845ED2B7243AEB6000B72985 /* MarkPro-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2B0243AEB6000B72985 /* MarkPro-BoldItalic.otf */; };
+		845ED2B8243AEB6000B72985 /* MarkPro-TestFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2B1243AEB6000B72985 /* MarkPro-TestFont.otf */; };
+		845ED2B9243AEB6000B72985 /* MarkPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2B2243AEB6000B72985 /* MarkPro.otf */; };
+		845ED2BA243AEB6000B72985 /* MarkPro-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2B3243AEB6000B72985 /* MarkPro-BlackItalic.otf */; };
 		E3FD203EBCF6F1D335829CE6 /* Pods_CoronaVirusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED15385189D9C80F828E028 /* Pods_CoronaVirusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +113,13 @@
 		845ED2A5243ABD9200B72985 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		845ED2A8243ABE3C00B72985 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		845ED2AA243ABEC700B72985 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		845ED2AD243AEB6000B72985 /* MarkPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Black.otf"; sourceTree = "<group>"; };
+		845ED2AE243AEB6000B72985 /* MarkPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Bold.otf"; sourceTree = "<group>"; };
+		845ED2AF243AEB6000B72985 /* MarkPro-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Book.otf"; sourceTree = "<group>"; };
+		845ED2B0243AEB6000B72985 /* MarkPro-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-BoldItalic.otf"; sourceTree = "<group>"; };
+		845ED2B1243AEB6000B72985 /* MarkPro-TestFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-TestFont.otf"; sourceTree = "<group>"; };
+		845ED2B2243AEB6000B72985 /* MarkPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarkPro.otf; sourceTree = "<group>"; };
+		845ED2B3243AEB6000B72985 /* MarkPro-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-BlackItalic.otf"; sourceTree = "<group>"; };
 		DAAA8F5CAFFCBF2DFB183E21 /* Pods-CoronaVirusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirusTests.debug.xcconfig"; path = "Target Support Files/Pods-CoronaVirusTests/Pods-CoronaVirusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6C4B5986328C3E3401A57AC /* Pods-CoronaVirus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirus.release.xcconfig"; path = "Target Support Files/Pods-CoronaVirus/Pods-CoronaVirus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,6 +230,7 @@
 		84457C392438E2480071AD9B /* CoronaVirus */ = {
 			isa = PBXGroup;
 			children = (
+				845ED2AC243AEB6000B72985 /* Fonts */,
 				8426AA89243A6A7D003F6660 /* GoogleService-Info.plist */,
 				8426AA7C243A55AA003F6660 /* Cells */,
 				8426AA6E243A47FC003F6660 /* Models */,
@@ -267,6 +282,20 @@
 				845ED2AA243ABEC700B72985 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		845ED2AC243AEB6000B72985 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				845ED2AD243AEB6000B72985 /* MarkPro-Black.otf */,
+				845ED2AE243AEB6000B72985 /* MarkPro-Bold.otf */,
+				845ED2AF243AEB6000B72985 /* MarkPro-Book.otf */,
+				845ED2B0243AEB6000B72985 /* MarkPro-BoldItalic.otf */,
+				845ED2B1243AEB6000B72985 /* MarkPro-TestFont.otf */,
+				845ED2B2243AEB6000B72985 /* MarkPro.otf */,
+				845ED2B3243AEB6000B72985 /* MarkPro-BlackItalic.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		BC272AC2624A7621AA28F157 /* Pods */ = {
@@ -365,11 +394,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				845ED2A7243ABD9200B72985 /* NewsCell.xib in Resources */,
+				845ED2B5243AEB6000B72985 /* MarkPro-Bold.otf in Resources */,
+				845ED2B9243AEB6000B72985 /* MarkPro.otf in Resources */,
 				84457C472438E24A0071AD9B /* LaunchScreen.storyboard in Resources */,
+				845ED2B8243AEB6000B72985 /* MarkPro-TestFont.otf in Resources */,
+				845ED2B6243AEB6000B72985 /* MarkPro-Book.otf in Resources */,
+				845ED2BA243AEB6000B72985 /* MarkPro-BlackItalic.otf in Resources */,
 				8426AA80243A55E1003F6660 /* EmergencyCell.xib in Resources */,
+				845ED2B4243AEB6000B72985 /* MarkPro-Black.otf in Resources */,
 				8426AA8A243A6A7D003F6660 /* GoogleService-Info.plist in Resources */,
 				84457C442438E24A0071AD9B /* Assets.xcassets in Resources */,
 				84457C422438E2480071AD9B /* Main.storyboard in Resources */,
+				845ED2B7243AEB6000B72985 /* MarkPro-BoldItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
