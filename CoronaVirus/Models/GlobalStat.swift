@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class GlobalStat : Codable, Equatable {
+public struct GlobalStat : Codable, Equatable {
     var newConfirmed: Int
     var totalConfirmed: Int
     var newDeaths: Int

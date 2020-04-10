@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class CountryStat : Codable, Equatable {
+public struct CountryStat : Codable, Equatable {
     public var country: String
     var countryCode: String
     var slug: String

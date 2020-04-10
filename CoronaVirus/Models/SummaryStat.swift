@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class SummaryStat : Codable, Equatable {
+public struct SummaryStat : Codable, Equatable {
     var global: GlobalStat
     var countries: [CountryStat]
     var date: String

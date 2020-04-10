@@ -25,6 +25,12 @@ public class APIManager {
         }
     }
 
+    func getGhanaStats(completion:@escaping (DataResponse<GhanaStatResponse, AFError>)->Void) {
+        manager.request(APIRouter.getGhanaStats).responseDecodable { (response) in
+            completion(response)
+        }
+    }
+
     func getNews(completion:@escaping (Result<Feed, ParserError>)->Void) {
         let parser = FeedParser(URL: APIRouter.getNews.urlRequest!.url!)
         parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
@@ -32,6 +38,5 @@ public class APIManager {
                 completion(result)
             }
         }
-
     }
 }

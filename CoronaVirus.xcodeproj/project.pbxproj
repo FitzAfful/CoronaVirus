@@ -42,6 +42,8 @@
 		84457C662438F6A80071AD9B /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C652438F6A80071AD9B /* ContactController.swift */; };
 		84457C682438F7E10071AD9B /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C672438F7E10071AD9B /* TabController.swift */; };
 		84457C6B2438F8C70071AD9B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457C6A2438F8C70071AD9B /* UIViewController+Extension.swift */; };
+		8457E0C824409E680050128E /* GhanaStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457E0C724409E680050128E /* GhanaStat.swift */; };
+		8457E0CA24409EE10050128E /* GhanaStatResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457E0C924409EE10050128E /* GhanaStatResponse.swift */; };
 		845ED2A3243AB8CA00B72985 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2A2243AB8CA00B72985 /* NewsItem.swift */; };
 		845ED2A6243ABD9200B72985 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED2A4243ABD9200B72985 /* NewsCell.swift */; };
 		845ED2A7243ABD9200B72985 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845ED2A5243ABD9200B72985 /* NewsCell.xib */; };
@@ -111,6 +113,8 @@
 		84457C652438F6A80071AD9B /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		84457C672438F7E10071AD9B /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		84457C6A2438F8C70071AD9B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		8457E0C724409E680050128E /* GhanaStat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GhanaStat.swift; sourceTree = "<group>"; };
+		8457E0C924409EE10050128E /* GhanaStatResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GhanaStatResponse.swift; sourceTree = "<group>"; };
 		845ED2A2243AB8CA00B72985 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		845ED2A4243ABD9200B72985 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		845ED2A5243ABD9200B72985 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				8426AA6F243A4829003F6660 /* CountryStat.swift */,
+				8457E0C724409E680050128E /* GhanaStat.swift */,
+				8457E0C924409EE10050128E /* GhanaStatResponse.swift */,
 				8426AA83243A5CB1003F6660 /* EmergencyContact.swift */,
 				8426AA71243A4966003F6660 /* GlobalStat.swift */,
 				8426AA73243A4A82003F6660 /* SummaryStat.swift */,
@@ -503,6 +509,7 @@
 				845ED2A9243ABE3C00B72985 /* Date+Extension.swift in Sources */,
 				84457C682438F7E10071AD9B /* TabController.swift in Sources */,
 				84457C622438F68B0071AD9B /* AdviceController.swift in Sources */,
+				8457E0CA24409EE10050128E /* GhanaStatResponse.swift in Sources */,
 				84457C662438F6A80071AD9B /* ContactController.swift in Sources */,
 				84457C5E2438F6580071AD9B /* HomeController.swift in Sources */,
 				845ED2AB243ABEC700B72985 /* UIImageView+Extension.swift in Sources */,
@@ -515,6 +522,7 @@
 				8426AA84243A5CB1003F6660 /* EmergencyContact.swift in Sources */,
 				84457C642438F6990071AD9B /* NewsController.swift in Sources */,
 				84457C3B2438E2480071AD9B /* AppDelegate.swift in Sources */,
+				8457E0C824409E680050128E /* GhanaStat.swift in Sources */,
 				8426AA7F243A55E1003F6660 /* EmergencyCell.swift in Sources */,
 				8426AA88243A65F1003F6660 /* UILabel+Extension.swift in Sources */,
 				8426AA62243A46F3003F6660 /* GenericDataSource.swift in Sources */,
@@ -686,7 +694,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CoronaVirus/Coronavirus Ghana.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3R59NXK675;
 				INFOPLIST_FILE = CoronaVirus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -694,7 +702,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.02;
+				MARKETING_VERSION = 0.03;
 				PRODUCT_BUNDLE_IDENTIFIER = technation.CoronaVirus;
 				PRODUCT_NAME = "Coronavirus Ghana";
 				SWIFT_VERSION = 5.0;
@@ -709,7 +717,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CoronaVirus/Coronavirus Ghana.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3R59NXK675;
 				INFOPLIST_FILE = CoronaVirus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -717,7 +725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.02;
+				MARKETING_VERSION = 0.03;
 				PRODUCT_BUNDLE_IDENTIFIER = technation.CoronaVirus;
 				PRODUCT_NAME = "Coronavirus Ghana";
 				SWIFT_VERSION = 5.0;

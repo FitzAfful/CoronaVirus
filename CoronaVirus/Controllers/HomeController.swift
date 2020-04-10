@@ -22,6 +22,7 @@ class HomeController: UITableViewController {
 
     @IBOutlet weak var loader: UIActivityIndicatorView!
     var statistics: SummaryStat!
+    var ghStatistics: GhanaStatResponse!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +36,17 @@ class HomeController: UITableViewController {
         if let dictionary = UserDefaults.standard.dictionary(forKey: "stats") {
             if let object = try? DictionaryDecoder().decode(SummaryStat.self, from: dictionary){
                 self.statistics = object
-                self.setStatistics()
+                self.setGlobalStatistics()
             }
         }
+
+        if let dictionary = UserDefaults.standard.dictionary(forKey: "gh-stats") {
+            if let object = try? DictionaryDecoder().decode(GhanaStatResponse.self, from: dictionary){
+                self.ghStatistics = object
+                self.setGhanaStatistics()
+            }
+        }
+
         self.getStatistics()
     }
 
@@ -61,31 +70,50 @@ class HomeController: UITableViewController {
             case.success(let response):
                 UserDefaults.standard.set(response.dictionary, forKey: "stats")
                 self.statistics = response
-                self.loader.isHidden = true
-                self.setStatistics()
+                self.setGlobalStatistics()
                 self.tableView.refreshControl?.endRefreshing()
             case .failure:
             self.loader.isHidden = true
                 self.showAlert(withTitle: "Error", message: "Could not retrieve latest statistics. Please try again later.")
             }
         }
+
+        APIManager().getGhanaStats { (result) in
+            switch result.result {
+            case.success(let response):
+                UserDefaults.standard.set(response.dictionary, forKey: "gh-stats")
+                self.ghStatistics = response
+                self.loader.isHidden = true
+                self.setGhanaStatistics()
+                self.tableView.refreshControl?.endRefreshing()
+            case .failure:
+            self.loader.isHidden = true
+                self.showAlert(withTitle: "Error", message: "Could not retrieve latest Ghanaian statistics. Please try again later.")
+            }
+        }
     }
 
-    func setStatistics(){
-        let ghanaStats = statistics.countries.filter { (country) -> Bool in
-            return country.countryCode == "GH"
-        }.first!
-
+    func setGlobalStatistics(){
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
-
-        ghanaConfirmedLabel.text = numberFormatter.string(from: NSNumber(value:ghanaStats.totalConfirmed))
-        ghanaCriticalLabel.text = "\(ghanaStats.newConfirmed)"
-        ghanaDeadLabel.text = "\(ghanaStats.totalDeaths)"
-        ghanaRecoveredLabel.text = numberFormatter.string(from: NSNumber(value:ghanaStats.totalRecovered))
 
         globalDeadLabel.text = numberFormatter.string(from: NSNumber(value:statistics.global.totalDeaths))
         globalConfirmedLabel.text = numberFormatter.string(from: NSNumber(value:statistics.global.totalConfirmed))
         globalRecoveredLabel.text = numberFormatter.string(from: NSNumber(value:statistics.global.totalRecovered))
+    }
+
+    func setGhanaStatistics(){
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+
+        guard let item = ghStatistics.data.first else {
+            return
+        }
+
+        ghanaConfirmedLabel.text = numberFormatter.string(from: NSNumber(value:Int(item.totalConfirmed) ?? 0))
+        ghanaCriticalLabel.text = item.newConfirmed
+        ghanaDeadLabel.text = item.totalDeaths
+        ghanaRecoveredLabel.text = item.totalRecovered
+
     }
 }

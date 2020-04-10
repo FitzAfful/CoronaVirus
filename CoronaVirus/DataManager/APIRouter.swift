@@ -13,11 +13,14 @@ enum APIRouter : APIConfiguration {
 	
 	case getSummaryStats
 	case getNews
+    case getGhanaStats
 
 	internal var method: HTTPMethod {
 		switch self {
 		case .getSummaryStats:
 			return .get
+        case .getGhanaStats:
+            return .get
         case .getNews:
             return .get
 		}
@@ -27,6 +30,8 @@ enum APIRouter : APIConfiguration {
 		switch self {
         case .getSummaryStats:
             return "https://api.covid19api.com/summary"
+        case .getGhanaStats:
+            return "https://corona.afroadore.com/api/v1/reports"
         case .getNews:
             return "https://www.who.int/rss-feeds/news-english.xml"
 		}
