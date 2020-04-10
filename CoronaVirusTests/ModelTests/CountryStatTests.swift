@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import CoronaVirus
+@testable import Coronavirus_Ghana
 @testable import Alamofire
 @testable import Mocker
 

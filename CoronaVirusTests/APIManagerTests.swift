@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import CoronaVirus
+@testable import Coronavirus_Ghana
 @testable import Alamofire
 @testable import Mocker
 
@@ -46,6 +46,32 @@ class APIManagerTests: XCTestCase {
         mock.register()
 
         manager.getSummaryStats { (result) in
+            XCTAssertEqual(result.result.success!, mockResponse)
+            XCTAssertNil(result.error)
+            requestExpectation.fulfill()
+        }
+
+        wait(for: [requestExpectation], timeout: 10.0)
+    }
+
+    func test_getGhanaStats() {
+
+        let apiEndpoint = URL(string: APIRouter.getGhanaStats.path)!
+        let requestExpectation = expectation(description: "Request should finish with Employees")
+        let responseFile = "ghanaResponse"
+        guard let mockedData = dataFromTestBundleFile(fileName: responseFile, withExtension: "json") else {
+            XCTFail("Error from JSON DeSerialization.jsonObject")
+            return
+        }
+        guard let mockResponse = try? JSONDecoder().decode(GhanaStatResponse.self, from: mockedData) else {
+            XCTFail("Error from JSON DeSerialization.jsonObject")
+            return
+        }
+
+        let mock = Mock(url: apiEndpoint, dataType: .json, statusCode: 200, data: [.get: mockedData])
+        mock.register()
+
+        manager.getGhanaStats { (result) in
             XCTAssertEqual(result.result.success!, mockResponse)
             XCTAssertNil(result.error)
             requestExpectation.fulfill()

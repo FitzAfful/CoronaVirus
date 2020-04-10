@@ -11,24 +11,23 @@ import XCTest
 @testable import Alamofire
 @testable import Mocker
 
-class SummaryStatTests: XCTestCase {
+class GhanaStatTests: XCTestCase {
 
     var bundle: Bundle!
 
     override func setUp() {
-        bundle = Bundle(for: SummaryStatTests.self)
+        bundle = Bundle(for: GhanaStatTests.self)
     }
 
     func testSummaryStatResponseJSONMapping() throws {
-        guard let url = bundle.url(forResource: "summary", withExtension: "json") else {
-            XCTFail("Missing file: global.json")
+        guard let url = bundle.url(forResource: "ghanaStat", withExtension: "json") else {
+            XCTFail("Missing file: ghanaStat.json")
             return
         }
 
         let json = try Data(contentsOf: url)
-        let summary = try! JSONDecoder().decode(SummaryStat.self, from: json)
+        let ghStat = try! JSONDecoder().decode(GhanaStat.self, from: json)
 
-        XCTAssertEqual(summary.date, "2020-04-05T17:06:39Z")
-        XCTAssertEqual(summary.global.newConfirmed, 100282)
+        XCTAssertEqual(ghStat.totalConfirmed, "1")
     }
 }
