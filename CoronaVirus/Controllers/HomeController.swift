@@ -21,7 +21,7 @@ class HomeController: UITableViewController {
     @IBOutlet weak var globalRecoveredLabel: UILabel!
 
     @IBOutlet weak var loader: UIActivityIndicatorView!
-    var statistics: SummaryStat!
+    var statistics: NewGlobalStat!
     var ghStatistics: GhanaStatResponse!
 
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class HomeController: UITableViewController {
         self.refreshControl?.addTarget(self, action: #selector(self.refreshTable), for: .valueChanged)
         
         if let dictionary = UserDefaults.standard.dictionary(forKey: "stats") {
-            if let object = try? DictionaryDecoder().decode(SummaryStat.self, from: dictionary){
+            if let object = try? DictionaryDecoder().decode(NewGlobalStat.self, from: dictionary){
                 self.statistics = object
                 self.setGlobalStatistics()
             }
@@ -65,7 +65,7 @@ class HomeController: UITableViewController {
     func getStatistics(){
         self.loader.isHidden = false
         self.loader.startAnimating()
-        APIManager().getSummaryStats { (result) in
+        /*APIManager().getSummaryStats { (result) in
             switch result.result {
             case.success(let response):
                 UserDefaults.standard.set(response.dictionary, forKey: "stats")
@@ -76,7 +76,20 @@ class HomeController: UITableViewController {
             self.loader.isHidden = true
                 self.showAlert(withTitle: "Error", message: "Could not retrieve latest statistics. Please try again later.")
             }
-        }
+        }*/
+
+        APIManager().getNewSummaryStats { (result) in
+            switch result.result {
+                case.success(let response):
+                    UserDefaults.standard.set(response.data.dictionary, forKey: "stats")
+                    self.statistics = response.data
+                    self.setGlobalStatistics()
+                    self.tableView.refreshControl?.endRefreshing()
+                case .failure:
+                self.loader.isHidden = true
+                    self.showAlert(withTitle: "Error", message: "Could not retrieve latest statistics. Please try again later.")
+                }
+            }
 
         APIManager().getGhanaStats { (result) in
             switch result.result {
@@ -94,12 +107,9 @@ class HomeController: UITableViewController {
     }
 
     func setGlobalStatistics(){
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .decimal
-
-        globalDeadLabel.text = numberFormatter.string(from: NSNumber(value:statistics.global.totalDeaths))
-        globalConfirmedLabel.text = numberFormatter.string(from: NSNumber(value:statistics.global.totalConfirmed))
-        globalRecoveredLabel.text = numberFormatter.string(from: NSNumber(value:statistics.global.totalRecovered))
+        globalDeadLabel.text = statistics.totalDeaths
+        globalConfirmedLabel.text = statistics.totalConfirmed
+        globalRecoveredLabel.text = statistics.totalRecovered
     }
 
     func setGhanaStatistics(){

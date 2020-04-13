@@ -25,6 +25,12 @@ public class APIManager {
         }
     }
 
+    func getNewSummaryStats(completion:@escaping (DataResponse<NewSummaryStatResponse, AFError>)->Void) {
+        manager.request(APIRouter.getNewSummaryStats).responseDecodable { (response) in
+            completion(response)
+        }
+    }
+
     func getGhanaStats(completion:@escaping (DataResponse<GhanaStatResponse, AFError>)->Void) {
         manager.request(APIRouter.getGhanaStats).responseDecodable { (response) in
             completion(response)

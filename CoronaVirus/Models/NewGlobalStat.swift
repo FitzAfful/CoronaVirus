@@ -25,7 +25,7 @@ public struct NewGlobalStat : Codable, Equatable {
 }
 
 
-public struct NewGlobalStatResponse : Codable, Equatable {
+public struct NewSummaryStatResponse : Codable, Equatable {
     var data: NewGlobalStat
     var status: String
 
