@@ -20,12 +20,12 @@ public class NewsItem : Codable, Equatable {
         self.description = description
         self.link = link
         self.date = date
-        print(description)
         if description.components(separatedBy: "?sfvrsn").count > 1 {
             let firstImageString = description.components(separatedBy: "?sfvrsn")[0]
-            let imageString = firstImageString.components(separatedBy: "src=\"")[1]
-            print(imageString)
-            self.imageUrl = URL(string: imageString)
+            if(firstImageString.components(separatedBy: "src=\"").count > 1){
+                let imageString = firstImageString.components(separatedBy: "src=\"")[1]
+                self.imageUrl = URL(string: imageString)
+            }
         }
         print(link)
         print("*********************************************************************")
