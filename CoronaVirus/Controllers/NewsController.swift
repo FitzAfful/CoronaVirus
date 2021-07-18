@@ -75,12 +75,10 @@ extension NewsController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellTag, for: indexPath) as! NewsCell
         cell.item = self.newsItems[indexPath.row]
         if let url = self.newsItems[indexPath.row].imageUrl {
-            cell.newsImageView.contentMode = .scaleToFill
             cell.newsImageView.setImage(url: url)
             cell.newsImageView.contentMode = .scaleToFill
         }else {
             cell.newsImageView.image = nil
-            cell.newsImageView.contentMode = .scaleAspectFit
             cell.newsImageView.image = UIImage(named: "icons8-news-1")
             cell.newsImageView.contentMode = .scaleAspectFit
         }

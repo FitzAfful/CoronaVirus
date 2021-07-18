@@ -11,10 +11,6 @@ import Foundation
 
 typealias CompletionHandler = (() -> Void)
 
-class GenericDataSource<T> : NSObject {
-    var data: DynamicValue<[T]> = DynamicValue([])
-}
-
 class DynamicValue<T> {
 
     var value : T {

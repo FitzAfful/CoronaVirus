@@ -18,7 +18,6 @@ class SymptomsController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.disableDarkMode()
-
         self.symptomLabel.text = symptoms
     }
 

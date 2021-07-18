@@ -27,9 +27,6 @@ public class NewsItem : Codable, Equatable {
                 self.imageUrl = URL(string: imageString)
             }
         }
-        print(link)
-        print("*********************************************************************")
-        print(" ")
     }
 
     public static func == (lhs: NewsItem, rhs: NewsItem) -> Bool {

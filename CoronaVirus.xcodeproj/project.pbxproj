@@ -251,20 +251,20 @@
 		84457C392438E2480071AD9B /* CoronaVirus */ = {
 			isa = PBXGroup;
 			children = (
-				84355407243B378000AA6CE3 /* Coronavirus Ghana.entitlements */,
-				845ED2AC243AEB6000B72985 /* Fonts */,
-				8426AA89243A6A7D003F6660 /* GoogleService-Info.plist */,
 				8426AA7C243A55AA003F6660 /* Cells */,
 				8426AA6E243A47FC003F6660 /* Models */,
 				8426AA5A243A46F3003F6660 /* DataManager */,
 				84457C692438F89E0071AD9B /* Extensions */,
 				84457C5C2438F63A0071AD9B /* Controllers */,
+				845ED2AC243AEB6000B72985 /* Fonts */,
 				84457C3A2438E2480071AD9B /* AppDelegate.swift */,
 				84457C3C2438E2480071AD9B /* SceneDelegate.swift */,
 				84457C402438E2480071AD9B /* Main.storyboard */,
 				84457C432438E24A0071AD9B /* Assets.xcassets */,
 				84457C452438E24A0071AD9B /* LaunchScreen.storyboard */,
 				84457C482438E24A0071AD9B /* Info.plist */,
+				8426AA89243A6A7D003F6660 /* GoogleService-Info.plist */,
+				84355407243B378000AA6CE3 /* Coronavirus Ghana.entitlements */,
 			);
 			path = CoronaVirus;
 			sourceTree = "<group>";
@@ -710,7 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CoronaVirus/Coronavirus Ghana.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 3R59NXK675;
 				INFOPLIST_FILE = CoronaVirus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -718,11 +718,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.04;
+				MARKETING_VERSION = 0.05;
 				PRODUCT_BUNDLE_IDENTIFIER = technation.CoronaVirus;
 				PRODUCT_NAME = "Coronavirus Ghana";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -733,7 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "CoronaVirus/Coronavirus Ghana.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 3R59NXK675;
 				INFOPLIST_FILE = CoronaVirus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -741,11 +741,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.04;
+				MARKETING_VERSION = 0.05;
 				PRODUCT_BUNDLE_IDENTIFIER = technation.CoronaVirus;
 				PRODUCT_NAME = "Coronavirus Ghana";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
