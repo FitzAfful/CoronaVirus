@@ -1,6 +1,6 @@
 # CoronaVirus Ghana
 
-![app screenshot](./Screenshots/banner)
+![app screenshot](./Screenshots/banner.png)
 
 This simple app delivers the latest developments in real-time from WHO and the Ghanaian government such as news articles, infection statistics, emergency numbers, COVID-19 relief resources, and many.
 
